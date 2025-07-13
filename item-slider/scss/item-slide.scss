@@ -93,8 +93,6 @@ $product-carousel-dot-default-color: #ccc;
     height: 50px;
     border-top: 2px solid $product-carousel-dot-active-color;
     border-right: 2px solid $product-carousel-dot-active-color;
-    border-bottom: none;
-    border-left: none;
     background-color: transparent;
     outline: 0;
     cursor: pointer;
@@ -140,5 +138,10 @@ $product-carousel-dot-default-color: #ccc;
         border-radius: 40%;
       }
     }
+  }
+
+  // 📱 모바일에서는 dot 숨김
+  @media (max-width: 768px) {
+    display: none !important;
   }
 }

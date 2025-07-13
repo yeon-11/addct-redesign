@@ -78,8 +78,6 @@
   height: 50px;
   border-top: 2px solid #df8a51;
   border-right: 2px solid #df8a51;
-  border-bottom: none;
-  border-left: none;
   background-color: transparent;
   outline: 0;
   cursor: pointer;
@@ -120,4 +118,9 @@
   background-color: #df8a51;
   width: 15px;
   border-radius: 40%;
+}
+@media (max-width: 768px) {
+  #carousel-dots {
+    display: none !important;
+  }
 }/*# sourceMappingURL=item-slide.css.map */

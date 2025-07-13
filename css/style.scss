@@ -32,7 +32,6 @@ a {
 /* ================= HEADER 스타일링 ================= */
 nav.navbar {
     background-color: #f8f9fa;
-    ;
     height: 50px;
     /* 헤더 높이 */
     position: relative;
@@ -71,7 +70,7 @@ nav.navbar {
 
     /* 드롭다운 메뉴 스타일 */
     .dropdown-menu {
-        background-color: transparent !important;
+        background-color: rgba(255, 255, 255, 0.5) !important;
         min-width: 130px;
         padding: 1rem 0;
         border: none !important;
@@ -113,6 +112,19 @@ nav.navbar {
         }
     }
 }
+
+
+
+/* ================= item-slier ================= */
+#carousel-dots {
+
+    // 📱 모바일에서 도트 숨기기
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+
 
 /* ================= 조향노트 섹션 ================= */
 .note-container {
@@ -201,6 +213,26 @@ h2.section-title::after {
     background-color: #df8a51;
     margin: 1rem auto 0;
 }
+
+@media (max-width: 768px) {
+    h2.section-title {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+
+    .note-card .note-text {
+        font-size: 0.5rem;
+        line-height: 1.3;
+        white-space: normal;
+        padding: 0 5px;
+    }
+
+    .note-container {
+        padding: 10px;
+    }
+}
+
 
 
 /* ================= FOOTER ================= */
@@ -293,5 +325,11 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 50px 1.5rem !important;
     }
 }
