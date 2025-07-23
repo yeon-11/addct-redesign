@@ -55,6 +55,8 @@ nav.navbar {
             }
 
             .nav-link {
+                background-color: rgba(255, 255, 255, 0.5) !important;
+                border-radius: 0 !important;
                 font-weight: 500;
                 color: #222;
                 padding: 0.5rem 1rem;
@@ -71,6 +73,7 @@ nav.navbar {
     /* 드롭다운 메뉴 스타일 */
     .dropdown-menu {
         background-color: rgba(255, 255, 255, 0.5) !important;
+        border-radius: 0 !important;
         min-width: 130px;
         padding: 1rem 0;
         border: none !important;
